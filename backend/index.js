@@ -5,11 +5,11 @@ const http = require('http');
 const server = http.createServer(app);
 const io = require('socket.io')(server);
 const mongoose = require('mongoose');
-const { users, messages } = require('./mockdata');
 const cors = require('cors');
 
 const url = 'mongodb://127.0.0.1:27017/squirl';
 
+app.use(cors());
 app.use(express.json());
 app.use(function (req, res, next) {
   // Website you wish to allow to connect
@@ -32,7 +32,6 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.use(cors());
 
 mongoose.connect(process.env.MONGODB_URI || url, {useNewUrlParser: true, useUnifiedTopology: true});
 const db = mongoose.connection;
