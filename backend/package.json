@@ -4,10 +4,8 @@
   "description": "Project for Kenzie Academy",
   "main": "index.js",
   "scripts": {
-    "start": "cd backend && node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "cd frontend && npm install && npm run build",
-    "postinstall": "cd frontend && npm install && npm run build"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
