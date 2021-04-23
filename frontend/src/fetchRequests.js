@@ -1,4 +1,4 @@
-const baseURL = `http://${window.location.host}`;
+const baseURL = `http://${window.location.host}/`;
 
 export const getUser = function (authorid) { 
   return fetch(baseURL + `user/${authorid.toString()}`)
