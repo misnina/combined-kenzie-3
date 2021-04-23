@@ -29,7 +29,7 @@ export const createUser = function (username, password) {
   .then(res => {
     return res.json();
   });
-}
+} 
 
 export const deleteUser = function (userid) {
   return fetch(baseURL + `user/${userid}`, {
