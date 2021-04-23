@@ -10,7 +10,7 @@ const cors = require('cors');
 
 const url = 'mongodb://127.0.0.1:27017/squirl';
 
-app.use(express.json());
+app.use(express.static(__dirname + '/'));
 app.use(function (req, res, next) {
   // Website you wish to allow to connect
   res.header("Access-Control-Allow-Origin", "*");
@@ -343,6 +343,6 @@ io.on('connect', (socket) => {
 });
 
 server
-  .listen(port, () => {
+  .listen(process.env.PORT || 4000, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
