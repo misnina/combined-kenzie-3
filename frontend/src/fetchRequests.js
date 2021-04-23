@@ -1,4 +1,4 @@
-const baseURL = `https://${window.location.host}/`;
+const baseURL = `https://lit-harbor-85156.herokuapp.com`;
 
 export const getUser = function (authorid) { 
   return fetch(baseURL + `user/${authorid.toString()}`)
