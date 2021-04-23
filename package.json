@@ -6,8 +6,7 @@
   "scripts": {
     "start": "cd backend && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "cd frontend && npm install && npm run build",
-    "postinstall": "cd frontend && npm install && npm run build"
+    "heroku-postbuild": "cd frontend && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
