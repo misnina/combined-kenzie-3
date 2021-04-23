@@ -1,0 +1,2 @@
+web: PORT=4001 npm start --prefix ./frontend
+api: PORT=4000 node index.js --prefix ./backend

@@ -2,6 +2,7 @@
   "name": "kenzie-kapstone-group-3",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:4001",
   "engines": {
     "node": "12.18.4"
   },
