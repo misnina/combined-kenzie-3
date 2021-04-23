@@ -3,19 +3,14 @@ const app = express();
 const port = process.env.PORT || 4000;
 const http = require('http');
 const server = http.createServer(app);
-const path = require('path');
-export const io = require('socket.io')(server);
+const io = require('socket.io')(server);
 const mongoose = require('mongoose');
 const { users, messages } = require('./mockdata');
 const cors = require('cors');
 
 const url = 'mongodb://127.0.0.1:27017/squirl';
 
-app.use(express.static(path.join(__dirname, 'build')));
-app.get('*', function (req, res) {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
-
+app.use(express.json());
 app.use(function (req, res, next) {
   // Website you wish to allow to connect
   res.header("Access-Control-Allow-Origin", "*");
@@ -348,6 +343,6 @@ io.on('connect', (socket) => {
 });
 
 server
-  .listen(process.env.PORT || 4000, () => {
+  .listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });

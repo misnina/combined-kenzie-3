@@ -1,4 +1,4 @@
-const baseURL = `https://${window.location.host}/`;
+const baseURL = process.env.public_url || "https://infinite-beach-71989.herokuapp.com/";
 
 export const getUser = function (authorid) { 
   return fetch(baseURL + `user/${authorid.toString()}`)
