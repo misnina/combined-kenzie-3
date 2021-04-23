@@ -1,4 +1,4 @@
-const baseURL = process.env.public_url || "/";
+const baseURL = `http://${window.location.host}`;
 
 export const getUser = function (authorid) { 
   return fetch(baseURL + `user/${authorid.toString()}`)
