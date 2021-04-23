@@ -1,0 +1,116 @@
+@import './main-colors';
+@import './utils';
+
+#Profile {
+  color: $base-text-color;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+
+
+  .card {
+    margin: 40px;
+    @include cards;
+  }
+
+  .profile-card {
+    width: 60vw;
+    height: 400px;
+  }
+
+  button {
+    width: 200px;
+    background-color: $primary-theme-color;
+    color: white;
+    align-self: center;
+  }
+  
+  .danger {
+    margin-top: 20px;
+    background-color: red;
+  }
+}
+
+.profile-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .profile-heading-left {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: $mid-text-color;
+
+    h1 {
+      font-size: 32px;
+      color: $primary-theme-color;
+      margin: 0;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+
+    .avatar {
+      margin: 30px;
+      box-shadow: $shadow;
+    }
+  }
+
+  .profile-heading-right {
+    margin: 10px;
+    margin-right: 50px;
+
+    h2 {
+      font-weight: normal;
+    }
+
+    .temp-group {
+      display: flex;
+      margin-left: 30px;
+       > * {
+        margin-right: -25px;
+       }
+    }
+  }
+}
+
+.about {
+  h1 {
+    text-align: left;
+    margin-left: 30px;
+    color: $primary-theme-color;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 20px;
+    text-align: left;
+    margin: 0 24px 0 24px;
+    overflow: hidden;
+  }
+}
+
+.update-card {
+
+    h1 {
+      margin: 5px;
+    }
+    padding: 40px;
+    padding-bottom: 30px;
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      .profile-form {
+        display: flex;
+
+        .info-section > * {
+          text-align: left;
+        }
+      }
+    }
+  }

@@ -1,0 +1,48 @@
+@import './main-colors.scss';
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body > #root > div {
+  height: 100vh;
+}
+
+#App {
+  display: flex;
+  color: $base-text-color;
+
+  #main-area {
+    flex-basis: 100%;
+    flex-grow: 1;
+    text-align: center;
+    background-color: $primary-theme-color;
+    overflow-y: scroll;
+  }
+
+  input,
+  textarea {
+    font-family: Londrina Solid;
+    font-size: 20px;
+    color: $base-text-color;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    margin: 5px 10px;
+    background-color: lightgray;
+  }
+
+  button {
+    font-size: 20px;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: Londrina Solid;
+  }
+
+  form {
+    font-family: Londrina Solid;
+  }
+}

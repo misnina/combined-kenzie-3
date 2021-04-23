@@ -1,0 +1,25 @@
+@import './main-colors.scss';
+
+.channel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+  overflow: hidden;
+
+  .chat-bar {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    overflow-x: hidden;
+    padding: 10px;
+    margin-top: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    button {
+      background-color: $primary-theme-color;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import './main-colors.scss';
+
+$shadow: 2px 7px 7px -4px rgba($shadow-color, 0.50);
+
+@mixin cards {
+  display: flex;
+  flex-direction: column;
+  background-color: $secondary-theme-color;
+  box-shadow: $shadow;
+  border-radius: 25px;
+} 

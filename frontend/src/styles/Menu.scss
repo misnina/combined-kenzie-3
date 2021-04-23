@@ -1,0 +1,47 @@
+@import 'main-colors';
+
+#Menu {
+  font-family: Yellowtail;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 180px;
+  text-decoration: none;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+
+  background-color: $secondary-theme-color;
+  color: $primary-theme-color;
+  
+  #lower-menu {
+    font-family: poppins;
+    margin-top: auto;
+    text-decoration: none;
+    color: $mid-text-color;
+  }
+
+  .link-list {
+    display: flex;
+    flex-direction: column;
+    font-family: poppins;
+    text-decoration: none;
+  }
+
+   a {
+    font-size: 20px;
+    text-decoration: none;
+    color: $base-text-color;
+    margin-bottom: 5px;
+  }
+
+  h1 {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    margin-left: -10px;
+    margin-top: -15px;
+    font-size: 50px;
+  }
+}
