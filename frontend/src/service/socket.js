@@ -1,4 +1,4 @@
-import io from "socket.io-client";
+import { io } from "../../../backend/index.js";
 import React from 'react';
 
 export const socket = io();
